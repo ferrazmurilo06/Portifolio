@@ -11,3 +11,16 @@ a{
     text-decoration: none;
     color: black;
 }
+
+nav{
+    background-color: #ffffff;
+    padding: 1px;
+    border: 5px;
+    margin: none;
+    border-radius: 35px;
+}
+
+body{
+    background-color: #e1e1e190;
+    font-family: Arial, sans-serif;
+}
