@@ -24,3 +24,51 @@ body{
     background-color: #e1e1e190;
     font-family: Arial, sans-serif;
 }
+
+.skills{
+    width: 500px;
+    color: #000000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 20px #00000049;
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.skills ul li{
+    margin: 20px;
+}
+
+.skills .barras{
+    background-color: #ccc;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.barras > span{
+    height: 20px;
+    background: linear-gradient(to right, #106813, #8bc34a);
+    position: absolute;
+}
+
+.html{
+    width: 90%;
+}
+
+.css{
+    width: 80%;
+}
+
+.js{
+    width: 70%;
+}
+
+.python{
+    width: 60%;
+}
