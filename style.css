@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Estilo para cabeçalho/tópicos*/
 .tópicos{
     display: flex;
     justify-content: space-around;
@@ -12,6 +13,7 @@ a{
     color: black;
 }
 
+/* Esttilo para as barras de habilidades */
 nav{
     background-color: #ffffff;
     padding: 1px;
@@ -72,3 +74,12 @@ body{
 .python{
     width: 60%;
 }
+
+.git{
+    width: 95%;
+}
+
+.titulografico{
+    text-indent: 1em 
+}
+/* Esttilo para as barras de habilidades */
