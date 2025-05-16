@@ -14,12 +14,13 @@ a{
 }
 
 /* Esttilo para as barras de habilidades */
-nav{
+.cabeçalho{
     background-color: #ffffff;
-    padding: 1px;
-    border: 5px;
+    padding: 2px;
+    margin: 12px;
     margin: none;
     border-radius: 35px;
+    box-shadow: 0 15px 20px #00000049
 }
 
 body{
@@ -27,8 +28,8 @@ body{
     font-family: Arial, sans-serif;
 }
 
-.skills{
-    width: 500px;
+.tecnologias{
+    width: 750px;
     color: #000000;
     padding: 15px;
     border-radius: 15px;
@@ -36,15 +37,15 @@ body{
     box-shadow: 0 15px 20px #00000049;
 }
 
-.skills ul{
+.tecnologias ul{
     list-style: none;
 }
 
-.skills ul li{
+.tecnologias ul li{
     margin: 20px;
 }
 
-.skills .barras{
+.tecnologias .barras{
     background-color: #ccc;
     display: block;
     height: 20px;
@@ -81,5 +82,59 @@ body{
 
 .titulografico{
     text-indent: 1em 
+}
+
+.skills{
+    width: 750px;
+    color: #000000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 20px #00000049;
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.skills ul li{
+    margin: 20px;
+}
+
+.skills .barras{
+    background-color: #ccc;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.design{
+    width: 50%;
+}
+
+.pub{
+    width: 40%;
+}
+
+.office{
+    width: 80%;
+}
+
+.comp{
+    width: 90%;
+}
+
+.equipe{
+    width: 100%;
+}
+
+#skills-tecnologias {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 35px; /* Espaço entre as divs */
+    padding: 20px;
 }
 /* Esttilo para as barras de habilidades */
