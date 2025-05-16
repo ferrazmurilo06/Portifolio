@@ -138,3 +138,44 @@ body{
     padding: 20px;
 }
 /* Esttilo para as barras de habilidades */
+/* formatação de  index.html*/
+.imagens {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.imagen-principal {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.imagem-banner{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.intro{
+    font-size: 26px;
+    padding: 20px;
+}
+
+.depoimento{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#depoimentos{
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+.texto-depoimento {
+    align-items: center;
+    padding: 20px;
+    padding-right: 0;
+}
