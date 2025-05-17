@@ -1,38 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendizado</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aprendizado.css">
 </head>
+
 <body>
-    <nav>
+    <nav class="cabeçalho">
         <ul class="tópicos">
             <li><a href="index.html" rel="external">Home</a></li>
             <li><a href="historico.html" rel="external">Histórico profissional/acadêmico</a></li>
             <li><a href="interesses.html" rel="external">Interesses e especialidades técnicas</a></li>>
-            <li><a href="contato.html"  rel="external">Página para contato</a></li>
+            <li><a href="contato.html" rel="external">Página para contato</a></li>
             <li><a href="galerias.html" rel="external">Galeria de imagens</a></li>
         </ul>
     </nav>
+    <div>
+        <h1>Meu aprendizado</h1>
 
-    <h1>Meu aprendizado</h1>
+        <p>Aqui eu falo o que eu estou aprendendo, e sinceramente, estou aprendendo muito no curso de css e html na qual
+            estou, mas na faculdade eu estou aprendendo bastante sobre linguagens de programação do mercado como java,
+            python entre outras. aqui vão alguns exemplos de códigos:</p>
+        <p>Abaixo segue formulário para comentar sobre meu aprendizado:</p>
+        <h2>Python</h2>
+        <code>import os
 
-    <p>Escreva aq oq está aprendendo.</p>
+palavra_secreta = 'perfume'
+letras_acertadas = ''
+num_tentativas = 0
 
-    <h2>Faça seu comentário sobre o meu aprendizado:</h2>
+while True:
+    letra_digitada = input('Digite uma letra: ')
+    num_tentativas += 1
 
-    <form action="">
-        <label for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">
-        <br><br>
-        <label for="comentário">Comentário: </label>
-        <br>
-        <textarea name="comentário" id="comentário" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
+    if len(letra_digitada) > 1:
+        print('Digite apenas uma letra por favor.')
+        continue
+    
+    if letra_digitada in palavra_secreta:
+        letras_acertadas += letra_digitada
+    
+    palavra_formada = ''
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            palavra_formada += letra_secreta
+        else:
+            palavra_formada += '*'
+    
+    print('Palavra formada: ', palavra_formada)
 
-    </form>
+
+    if palavra_formada == palavra_secreta:
+        os.system('cls')
+        print('VOCÊ GANHOU!!!!! EBAAAAA')
+        print('A palavra secreta era ', palavra_secreta)
+        print('Tentativas: ', num_tentativas)
+        letras_acertadas = ''
+        num_tentativas = 0</code>
+
+        <h2>Java</h2>
+        <code>package aula02.Exercicios;
+
+public class Conta {
+    String titular;
+    int numero;
+    double saldo;
+
+    void mostrarDaos(){
+        System.out.println("Titular: " + titular);
+        System.out.println("Numero: " + numero);
+        System.out.println("Saldo: " + saldo);
+    }
+
+    void depositar(double valor){
+        saldo = saldo + valor;
+        System.out.println("Saldo após depósito: " + saldo);
+    }
+
+    void sacar(double valor){
+        if(valor > 0 && saldo >= valor){
+            saldo = saldo - valor;
+            System.out.println("Saldo após saque: " + saldo);
+        }
+        else if (saldo  valor){
+            System.out.println("Saldo insuficiente");
+        }
+        else{
+            System.out.println("saque inválido");
+        }
+    }
+}
+</code>
+    </div>
+    <section class="form">
+        <form action="">
+            <legend>Faça seu comentário sobre o meu aprendizado:</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+            <label for="comentário">Comentário: </label>
+            <br>
+            <textarea name="comentário" id="comentário" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar" class="btn">
+        </form>
+    </section>
 </body>
+
 </html>
